@@ -50,6 +50,11 @@ a{
     padding: 0 24px;
     
 }
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
  .nav-menu{
     display: flex;
     gap: 30px;
@@ -69,8 +74,6 @@ a{
    display: flex;
     gap: 30px;
     /* justify-content: flex-end; */
-    margin-left: 2rem;
-    padding-top: 2rem;
    
 }
 .nav-link{
@@ -102,12 +105,15 @@ margin: 5px auto;
 transition: all 0.3s ease-in-out;
 background-color: gray;
 
+
 }
 
 
 @media(max-width:768px){
 .hamburger{
     display: block;
+    
+
     
 }
 .hamburger.active.bar:nth-child(2){
@@ -398,12 +404,8 @@ flex-wrap: wrap;
     border:2px solid #e9d5a1;
     border-radius:.25rem ;
 }
-@media (max-width:1000px){
-    .skills-icon{
-        flex: 100%;
-        /* max-width: 480px; */
-    }
-}
+
+
 
 
 /* footer */
