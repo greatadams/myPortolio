@@ -12,12 +12,13 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 .container{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 0 auto;
+    
 }
 
 header{
@@ -42,29 +43,43 @@ a{
 .nav-bar{
     min-height: 70px;
     display: flex;
+    flex-direction: row;
+
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
     
 }
-.nav-menu{
+ .nav-menu{
     display: flex;
     gap: 30px;
     justify-content: flex-end;
     margin-right: 2rem;
+    
     /* position: fixed; */
     
     
 
-}
+} 
+
 
 .nav-brand{
    font-size: 2rem;
+   
+   display: flex;
+    gap: 30px;
+    /* justify-content: flex-end; */
+    margin-left: 2rem;
+    padding-top: 2rem;
+   
 }
 .nav-link{
     transition: 0.7s ease;
     
     font-size: 12px;
+    
+   
+
 }
 .nav-link:hover{
     font-size: 15px;
@@ -113,7 +128,7 @@ background-color: gray;
     flex-direction: column;
     background: gray;
     opacity: 0.6;
-    width: 100%;
+    width: 88%;
     text-align: center;
     transition: 0.3s;
 }
@@ -369,9 +384,9 @@ margin-right: 20px;
     flex-direction: row;
     margin: 2rem;
     
-
-    /* border: 1px solid #000; */
-    /* border-radius:.25rem ; */
+width: 100%;
+flex-wrap: wrap;
+    align-items: center;
     padding: .5rem;
     justify-content: center;
     gap: 1rem;
@@ -379,6 +394,17 @@ margin-right: 20px;
 
     
 }
+.icon-border{
+    border:2px solid #e9d5a1;
+    border-radius:.25rem ;
+}
+@media (max-width:1000px){
+    .skills-icon{
+        flex: 100%;
+        /* max-width: 480px; */
+    }
+}
+
 
 /* footer */
 footer{
